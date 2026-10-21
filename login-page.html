@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOGIN-PAGE</title>
+        <style>
+            h1 {
+  text-align: center;
+  font-size: 30px;
+}
+body {
+  background: linear-gradient(135deg, #98ffcc, lightblue);
+  display: grid;
+  place-items: center;
+}
+form {
+  background: white;
+  height: 0px auto;
+  width: 500px;
+  padding: 50px;
+	border: solid black;
+  border-radius: 20px;
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+form:hover {
+  transform: perspective(1000px) rotateX(4deg) rotateY(4deg) scale(1.04);
+  box-shadow: 0 0 10px white, 0 0 20px black, 0 0 40px black;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+form [placeholder] {
+  padding: 6px 40px;
+  width: 85%;
+  border-radius: 12px;
+}
+form label {
+  font-family: impact;
+  font-size: 18px;
+}
+form label1 {
+    margin-left: 400px;
+}
+form label2 {
+  margin-left: 250px;
+}
+form input[type="submit"] {
+  background: white;
+  color: red;
+  border: solid red;
+  border-radius: 10px;
+  padding: 4px 8px;
+  font-family: lucida sans;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+form input[type="submit"]:hover {
+  box-shadow: 0 0 10px red, 0 0 20px red, 0 0 40px red;
+  transform: scale(1.04);
+}
+img {
+    display: block;
+    border-radius: 10000px;
+    max-width: 100px;
+    margin: 0px auto;
+    margin-bottom: 30px;
+    mix-blend-mode: multiply;
+    box-shadow: 0 0 10px black, 0 0 20px white, 0 0 40px black;
+}
+        </style>
+    </head>
+
+    <body>
+        <h1>ACCOUNT</h1>
+<form>
+    <img src="instagram.jpg" alt="insta">
+  <h2>INSTAGRAM</h2>
+  <label for="user">👤Username: </label><br>
+  <input type="text" id="user" placeholder="username" autofocus required><br><br>
+  
+  
+  <label for="pass">🔑Password: </label><br>
+  <input type="password" id="pass" placeholder="password" required>
+<br><br>
+<input type="checkbox" id="box"><label for="box"> remember me</label>
+<a href="forget-password.html" target="_blank"><label2>forget password?</label2></a>
+<br><br><br><br>
+<input type="submit" value="submit" style="display: block; margin: 0px auto;"><br>
+<hr>
+
+<p>Don't have an account</p>
+<a href="signup.html" id="up" target="_blank">
+    <label1 for="up">sign up</label1>
+</a>
+</form>
+    </body>
+</html>
