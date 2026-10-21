@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LOGIN PAGE</title>
+        <style>
+            h1 {
+                color: black;
+                padding: 10px;
+                font-size: 50px;
+                font-family: impact;
+                text-align: center;
+                transition: transform 0.3s ease;
+            }
+            h1:hover {
+                color: lightcoral;
+                transform: rotateY(25deg) rotateX(-25deg) scale(1.05);
+            }
+            h2 {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: medium;
+                font-weight: 100;
+                text-align: left;
+                margin-bottom: 40px;
+            }
+            h3 {
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 29px;
+                font-weight: 100;
+                text-decoration: underline;
+                margin-bottom: 36px;
+            }
+            body {
+                background: linear-gradient(135deg, #72ffb6, #10d164);
+            }
+            form {
+                background: linear-gradient(135deg, grey, lightblue);
+                color: black;
+                height: 430px;
+                width: 320px;
+                border: solid black;
+                border-radius: 14px;
+                margin: 0 auto;
+                padding: 30px;
+                align-content: center;
+                font-size: medium;
+                text-align: center;
+                transition: transform 0.3s ease;
+            }
+            form:hover {
+                transform: perspective(1000px) rotateY(4deg) rotateX(6deg) scale(1.04);
+                /*transform: rotateX(180deg);*/
+                background: linear-gradient(300deg, purple, pink);
+            }
+            form [placeholder] {
+                padding: 4px;
+                font-family: 'Trebuchet MS';
+            }
+            form label {
+                cursor: pointer;
+            }
+            button {
+                background-color: orange;
+                color: black;
+                padding: 6px;
+                border-radius: 10px;
+                margin-left: 15px;
+                transition: transform 0.3s ease;
+                cursor: pointer;
+            }
+            button:hover {
+                transform: scale(1.03);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>LOGIN</h1>
+        <form>
+            <h3>INSTAGRAM</h3>
+            <h2>SIGN IN DETAILS!!</h2>
+            <label for="user">👤USERNAME: </label>
+            <input type="text" id="user" maxlength="13" minlength="4" autocomplete="username" placeholder="username" required autofocus><br><br>
+
+            <label for="pass">🔑PASSWORD: </label>
+            <input type="password" id="pass" maxlength="14" minlength="6" autocomplete="current-password" placeholder="password" required><br><br>
+
+            <button type="reset">RESET</button>
+            <button type="submit">SUBMIT</button>
+            <br><br><br>
+            <hr>
+
+            <p>Don't have an account?</p>
+            <a href="signup.html" target="_blank">
+                <label>Sign up</label>
+            </a> 
+        </form>
+    </body>
+</html>
